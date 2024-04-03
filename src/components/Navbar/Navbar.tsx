@@ -1,6 +1,7 @@
 import DefaultLayout from "../Layouts/DefaultLayout";
 import { Icons } from "../Icons/Icons";
 import Link from "next/link";
+import NavItems from "./NavItems";
 
 const Navbar = () => {
   return (
@@ -14,6 +15,9 @@ const Navbar = () => {
                 <Link href="/">
                   <Icons.logo className="w-10 h-10" />
                 </Link>
+              </div>
+              <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
+                <NavItems />
               </div>
             </div>
           </div>
